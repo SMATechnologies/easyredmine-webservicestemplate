@@ -1,5 +1,5 @@
-# Project Name
-Project description
+# Easyredmine Web Services Connector
+This is a template to automatically create issue in Easyredmine, from OpCon
 
 # Disclaimer
 No Support and No Warranty are provided by SMA Technologies for this project and related material. The use of this project's files is on your own risk.
@@ -7,10 +7,39 @@ No Support and No Warranty are provided by SMA Technologies for this project and
 SMA Technologies assumes no liability for damage caused by the usage of any of the files offered here via this Github repository.
 
 # Prerequisites
-
-
+- OpCon V19.1
+- Webservices Connector 20.0.3 
+- Create two new Global Properties :
+  - [[Easyredmine-API-PATH]] your Easyredmine url
+  - [[Easyredmine-API-KEY]]  your Easyredmine user API-KEY 
 # Instructions
-
+- Download the .json file
+- Create your Opcon job Type = Windows, Sub-type = Web Services
+- Import Template, choose your .json 
+- check the body json, and modify it if you need (OpCon Global Properties are supported)
+   
+Sample :
+```
+  "issue": {
+    "project_id": 1,
+    "subject": "Example",
+    "priority_id": 4,
+    "description": "Opcon [[$JOB NAME]] [[$SCHEDULE DATE]]"    
+  }
+}
+```
+Parameters:
+```
+issue - A hash of the issue attributes:
+project_id
+tracker_id
+status_id
+priority_id
+subject 
+description
+category_id
+...
+```
 
 # License
 Copyright 2019 SMA Technologies
