@@ -15,8 +15,9 @@ SMA Technologies assumes no liability for damage caused by the usage of any of t
 # Instructions
 - Download the .json file
 - Create your Opcon job Type = Windows, Sub-type = Web Services
-- Import Template, choose your .json 
+- Import Template, choose your .json - 
 - check the body json, and modify it if you need (OpCon Global Properties are supported)
+
    
 Sample :
 ```
