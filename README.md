@@ -13,7 +13,7 @@ SMA Technologies assumes no liability for damage caused by the usage of any of t
   - [[Easyredmine-API-PATH]] your Easyredmine url
   - [[Easyredmine-API-KEY]]  your Easyredmine user API-KEY 
 # Instructions
-- Download the .json file
+- Download the .json file [release available here](https://github.com/SMATechnologies/opcon-cli-java/releases).
 - Create your Opcon job Type = Windows, Sub-type = Web Services
 - Import Template, choose your .json - 
 - in the variable tab fill in the variable @key use the global property : [[Easyredmine-API-KEY]]  
