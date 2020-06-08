@@ -1,0 +1,27 @@
+{
+  "templateid" : null,
+  "steps" : [ {
+    "function" : "POST",
+    "url" : "[[Easyredmine-API-PATH]]/issues.json?key=@key",
+    "request" : {
+      "headers" : [ {
+        "attribute" : "Content-Type",
+        "value" : "application/json"
+      } ],
+      "body" : "{\r\n  \"issue\": {\r\n    \"project_id\": ,\r\n    \"subject\": \"sample\",\r\n    \"description\": \"sample description\",\r\n    \"priority_id\": ,\r\n    \"tracker_id\":,\r\n    \"status_id\": ,\r\n    \"author_id\": ,\r\n    \"assigned_to_id\": \r\n  }\r\n}",
+      "fileName" : null
+    },
+    "response" : {
+      "ignoreResult" : false,
+      "stepCompletionCode" : 201,
+      "responseDataCheck" : null,
+      "fileName" : null,
+      "variables" : [ ]
+    }
+  } ],
+  "variables" : [ {
+    "name" : "@key",
+    "value" : "[[Easyredmine-API-KEY]]"
+  } ],
+  "properties" : [ ]
+}
