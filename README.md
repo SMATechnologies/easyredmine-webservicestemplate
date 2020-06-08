@@ -8,7 +8,7 @@ SMA Technologies assumes no liability for damage caused by the usage of any of t
 
 # Prerequisites
 - OpCon V19.1
-- Webservices Connector 20.0.3 
+- OpCon Webservices Connector 20.0.3 
 - Create two new Global Properties :
   - [[Easyredmine-API-PATH]] your Easyredmine url
   - [[Easyredmine-API-KEY]]  your Easyredmine user API-KEY 
